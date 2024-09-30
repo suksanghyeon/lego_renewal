@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+<style>
+     
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,6 +87,23 @@
                 <div class="products">
                     <a href="#" class="left_arrow"><i class="fa-regular fa-chevron-left" style="font-weight: 900;"></i></a>
                     <div>
+
+                            <h1>지도 앱에서 열기</h1>
+
+    <!-- Tmap -->
+    <a href="tmap://route?goalx=127.027621&goaly=37.497942&goalname=목적지" class="btn">T맵에서 열기</a>
+
+    <!-- Naver Map -->
+    <a href="nmap://navigation?dlat=37.497942&dlng=127.027621&dname=목적지" class="btn">네이버 지도에서 열기</a>
+
+    <!-- Kakao Map -->
+    <a href="kakaomap://route?ep=37.497942,127.027621&by=CAR" class="btn">카카오맵에서 열기</a>
+
+    <!-- 웹용 링크 (PC 대체) -->
+    <p>PC에서 열려면:</p>
+    <a href="https://map.naver.com/v5/directions/-/-/-/-/-" target="_blank" class="btn">네이버 지도 웹에서 열기</a>
+    <a href="https://map.kakao.com/" target="_blank" class="btn">카카오맵 웹에서 열기</a>
+    <a href="https://www.tmap.co.kr" target="_blank" class="btn">T맵 웹에서 열기</a>
                         <span class="tag">신제품</span>
                        <a href="index2.html" target="_blank"><img src="images/10298.png" alt="베스파125 레고" class="first" ></a>
                        <p class="recommend_price">Vespa 125 <br>139,900원</p>
